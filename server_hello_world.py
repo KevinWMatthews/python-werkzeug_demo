@@ -8,4 +8,4 @@ application = Response('Hello, World!')
 
 if __name__ == '__main__':
     from werkzeug.serving import run_simple
-    run_simple(SERVER_HOSTNAME, SERVER_PORT, application)
+    run_simple(SERVER_HOSTNAME, SERVER_PORT, application, use_debugger=True, use_reloader=True)
